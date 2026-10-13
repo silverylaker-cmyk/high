@@ -12,7 +12,7 @@
 | M3 | 게임 A·B·C | 완료, **성능 실기기 미검증** | hold/breaks/사이렌/버블/등반 로직 단위 테스트, 기준음만 재생 시 성공 0건 테스트 |
 | M4 | XP·레벨·퀘스트·스트릭·목 에너지·컬렉션·업적·코치 | 완료 | 레벨 공식·주차 계산·에너지 자정 리셋 테스트 |
 | M5 | 자가체크·안전 규칙·기록·설정·내보내기 | 완료(검수로 M0–M2에 앞당김) | §6 규칙 테스트(페널티·7일 상한·레드플래그), JSON 왕복 무손실·원자적 가져오기 |
-| M6 | PWA·배포 | 빌드·워크플로 작성, **오프라인·Lighthouse 미측정** | `vite-plugin-pwa`(prompt 방식), `.github/workflows/deploy.yml` |
+| M6 | PWA·배포 | 배포 완료, Lighthouse·오프라인 **2026-10-14 측정** | `vite-plugin-pwa`(prompt 방식), `.github/workflows/deploy.yml`, `docs/lighthouse/` |
 
 테스트 결과(2026-10-13, Node 20.19, Chrome 시스템 빌드):
 - `npm test`: 14 파일, 118 통과 · 1 건너뜀(실제 발성 fixture 없음)
@@ -65,7 +65,7 @@
 ## 6. 남은 이슈
 
 - 실제 발성 fixture 없음 → `tests/fixtures/voice/README.md` 형식으로 수집 필요(§11.6-5).
-- Lighthouse PWA·접근성 점수, 오프라인 재실행 미측정(P2-8: 평가 방법 먼저 정의).
+- Lighthouse·오프라인 측정(2026-10-14, Pages `https://silverylaker-cmyk.github.io/high/`, 모바일): 성능 84 · 접근성 93 · 모범 사례 100 · SEO 100. LH 13은 PWA 카테고리 없음. SW 등록·프리캐시·오프라인 재로드 성공(200). 접근성 잔여: `aria-prohibited-attr`(온보딩 `.bar`에 role 없는 `aria-label`), `landmark-one-main`. 리포트: `docs/lighthouse/pages-2026-10-14.report.*`.
 - 여러 탭 동시 실행 시 세션·에너지 경합 처리 없음(P1-9).
 - 사용자 글자 확대·가로 모드 세부 점검, 게임 캔버스 밖 비게임 연습 경로(P2-1) 미흡.
 - 발성 시연 콘텐츠(P1-11), 스케일 루틴 게임(P1-12), 버블 글라이드 변형 모드 미구현.

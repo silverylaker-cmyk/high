@@ -51,9 +51,9 @@ export function Onboarding() {
   };
 
   return (
-    <div style={{ minHeight: '100%', background: 'var(--c-horchata)', padding: 16 }}>
+    <main id="main" style={{ minHeight: '100%', background: 'var(--c-horchata)', padding: 16 }}>
       <div className="stack" style={{ maxWidth: 520, margin: '0 auto', paddingTop: 24 }}>
-        <div className="bar" aria-label={`${step + 1}/5`}>
+        <div className="bar" role="progressbar" aria-label="온보딩 진행" aria-valuemin={1} aria-valuemax={5} aria-valuenow={step + 1} aria-valuetext={`${step + 1}/5`}>
           <span style={{ width: `${((step + 1) / 5) * 100}%` }} />
         </div>
         {step === 0 && (
@@ -125,6 +125,6 @@ export function Onboarding() {
           </>
         )}
       </div>
-    </div>
+    </main>
   );
 }

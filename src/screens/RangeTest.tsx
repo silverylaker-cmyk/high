@@ -250,7 +250,7 @@ function RangeTestInner() {
           <span className="t-heading">
             <NoteText midi={comfort.current} />
           </span>
-          <div className="bar green" style={{ width: '100%' }} aria-label="유지 진행">
+          <div className="bar green" style={{ width: '100%' }} role="progressbar" aria-label="유지 진행" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(holdPct * 100)}>
             <span style={{ width: `${holdPct * 100}%` }} />
           </div>
         </div>

@@ -74,11 +74,11 @@ export function PlayScreen() {
     );
   }
   return (
-    <div className="play">
+    <main className="play" id="main">
       <MicGate>
         <Game key={g} game={g} />
       </MicGate>
-    </div>
+    </main>
   );
 }
 
