@@ -1,0 +1,52 @@
+:root {
+  /* core */
+  --c-aubergine: #4a154b; /* 사이드바, 앱바, 주 버튼 */
+  --c-aubergine-2: #611f69; /* hover/pressed */
+  --c-horchata: #f4ede4; /* 따뜻한 면: 온보딩·결과 카드 배경 */
+  --c-black: #1d1c1d; /* 기본 텍스트 */
+  --c-white: #ffffff;
+  --c-blue: #36c5f0; /* 목표선·정보 */
+  --c-green: #2eb67d; /* 적중·획득·성공 */
+  --c-yellow: #ecb22e; /* 근접·에너지 */
+  --c-red: #e01e5a; /* 실패·경고 */
+  /* derived (black/white 투명도만 사용) */
+  --c-text-muted: rgba(29, 28, 29, 0.7);
+  --c-border: rgba(29, 28, 29, 0.13);
+  --c-sidebar-text: rgba(255, 255, 255, 0.7);
+  --c-sidebar-active-bg: rgba(255, 255, 255, 0.16);
+
+  /* 세컨더리(일러스트·게임 오브젝트 전용, 텍스트 금지) */
+  --c2-navy: #1e328f;
+  --c2-cyan: #0e9dd3;
+  --c2-teal: #2392a2;
+  --c2-aqua: #78d7dd;
+  --c2-forest: #185f34;
+  --c2-olive: #729c1a;
+  --c2-butter: #ffd57e;
+  --c2-peach: #fed4be;
+  --c2-coral: #f2606a;
+  --c2-pink: #ffb6bd;
+
+  --font: 'Lato', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-modal: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  --dur: 180ms;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
