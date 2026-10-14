@@ -3,21 +3,20 @@
 URL: https://silverylaker-cmyk.github.io/high/
 Form factor: mobile (Lighthouse 13.5, headless Chrome)
 
-## Scores
-- Performance: 84
-- Accessibility: 93 (goal ≥ 90 met)
+## Scores (post a11y fix recheck, 11:18 KST)
+- Performance: 82
+- Accessibility: 100 (was 93 before morning progressbar/main fix)
 - Best Practices: 100
 - SEO: 100
 - PWA category: removed in Lighthouse 13; checked separately below
 
 ## Key metrics
-- FCP 2.0 s · LCP 3.7 s · TBT 0 ms · CLS 0.127 · SI 2.0 s · TTI 3.7 s
+- FCP 2.0 s · LCP 3.8 s · TBT 10 ms · CLS 0.127 · SI 2.0 s
 
-## Accessibility fails (weighted)
-- aria-prohibited-attr: `div.bar` with aria-label and no role (onboarding step indicator)
-- landmark-one-main: no `<main>` landmark
+## Accessibility
+- No failing audits after `role="progressbar"` and `<main>` landmark fixes on onboarding/play/range.
 
-## Offline / SW (Playwright)
+## Offline / SW (Playwright, earlier same day)
 - service worker active at scope `/high/`
 - caches: workbox-precache-v2-…, fonts
 - offline reload: success, HTTP 200, title 하이노트

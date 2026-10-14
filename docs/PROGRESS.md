@@ -65,7 +65,7 @@
 ## 6. 남은 이슈
 
 - 실제 발성 fixture 없음 → `tests/fixtures/voice/README.md` 형식으로 수집 필요(§11.6-5).
-- Lighthouse·오프라인 측정(2026-10-14, Pages `https://silverylaker-cmyk.github.io/high/`, 모바일): 성능 84 · 접근성 93 · 모범 사례 100 · SEO 100. LH 13은 PWA 카테고리 없음. SW 등록·프리캐시·오프라인 재로드 성공(200). 접근성 잔여: `aria-prohibited-attr`(온보딩 `.bar`에 role 없는 `aria-label`), `landmark-one-main`. 리포트: `docs/lighthouse/pages-2026-10-14.report.*`.
+- Lighthouse·오프라인 측정(2026-10-14, Pages `https://silverylaker-cmyk.github.io/high/`, 모바일): 성능 82 · 접근성 100 · 모범 사례 100 · SEO 100(a11y 수정 배포 후 11:18 KST 재측정). LH 13은 PWA 카테고리 없음. SW 등록·프리캐시·오프라인 재로드 성공(200). 리포트: `docs/lighthouse/pages-2026-10-14.report.*`.
 - 여러 탭 동시 실행 시 세션·에너지 경합 처리 없음(P1-9).
 - 사용자 글자 확대·가로 모드 세부 점검, 게임 캔버스 밖 비게임 연습 경로(P2-1) 미흡.
 - 발성 시연 콘텐츠(P1-11), 스케일 루틴 게임(P1-12), 버블 글라이드 변형 모드 미구현.
